@@ -18,6 +18,6 @@ import javax.persistence.Entity;
 public class Endereco extends BaseEntity {
 
     @Column(name = "dsEndereco", length = 100)
-    private String decricaoEndereco;
+    private String descricaoEndereco;
 
 }

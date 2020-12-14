@@ -24,7 +24,7 @@ public class Colaborador extends BaseEntity {
     @Column(name = "nmTime", length = 40)
     private String nomeTime;
 
-    @OneToOne
+    @OneToOne(cascade = CascadeType.ALL)
     @JoinColumn(name = "idEndereco", referencedColumnName = "idendereco")
     private Endereco endereco;
 

@@ -12,6 +12,6 @@ import lombok.Setter;
 public class EnderecoDTO implements BaseDTO {
 
     private Long id;
-    private String decricaoEndereco;
+    private String descricaoEndereco;
 
 }

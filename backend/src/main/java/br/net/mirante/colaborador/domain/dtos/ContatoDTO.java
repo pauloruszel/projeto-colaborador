@@ -12,10 +12,6 @@ import lombok.Setter;
 public class ContatoDTO implements BaseDTO {
 
     private Long id;
-    private String numeroTelefone;
-    private String descricaoEmail;
-    private String nomeRedeSocial;
-    private String nmTelefone;
-    private ColaboradorDTO colaborador;
+    private String descricaoContato;
     private TipoContatoDTO tipoContato;
 }

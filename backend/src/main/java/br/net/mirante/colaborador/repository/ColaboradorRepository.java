@@ -14,4 +14,6 @@ public interface ColaboradorRepository extends JpaRepository<Colaborador, Long> 
 
     Optional<Colaborador> findByNomeTime(@Param("time") String time);
 
+    Optional<Colaborador> findByNome(@Param("nome") String nome);
+
 }
