@@ -15,6 +15,22 @@
     },
     {
       "path": "./e2e/tsconfig.e2e.json"
+    },
+    {
+      "compilerOptions": {
+        "experimentalDecorators": true
+      }
     }
-  ]
+  ],
+  "compilerOptions": {
+    "baseUrl": "./",
+    "outDir": "./dist/out-tsc",
+    "sourceMap": true,
+    "declaration": false,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "resolveJsonModule": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true
+  }
 }
