@@ -1,0 +1,48 @@
+<form [formGroup]="form" autocomplete="off" novalidate
+      (ngSubmit)="create(form.value)">
+  <div class="form-container"
+       fxLayout="column"
+       fxLayoutAlign="space-evenly center">
+
+    <div fxFlex="10"
+         fxLayout="row"
+         fxLayoutAlign="center center" class="container-title-form">
+      <p class="card-title">Olá novamente!</p>
+    </div>
+
+    <div fxLayout="row" fxLayoutAlign="center center" fxLayoutGap="10px" class="icon-header">
+<!--      <span fxLayoutAlign="center center" class="icon livre">L</span>-->
+<!--      <span fxLayoutAlign="center center" class="icon anos10">10</span>-->
+<!--      <span fxLayoutAlign="center center" class="icon anos12">12</span>-->
+<!--      <span fxLayoutAlign="center center" class="icon anos14">14</span>-->
+<!--      <span fxLayoutAlign="center center" class="icon anos16">16</span>-->
+<!--      <span fxLayoutAlign="center center" class="icon anos18">18</span>-->
+    </div>
+
+    <mat-divider></mat-divider>
+    <div fxFlex="80" class="form-container"
+         fxLayout="column"
+         fxLayoutAlign="center center">
+
+      <mat-form-field appearance="outline">
+        <mat-label>Usuário</mat-label>
+        <input matInput formControlName="usuario" type="text">
+        <mat-error *ngIf="hasErros('usuario', 'required')">Esse é um campo obrigatório.</mat-error>
+      </mat-form-field>
+
+      <mat-form-field appearance="outline">
+        <mat-label>Senha</mat-label>
+        <input matInput formControlName="senha" type="password">
+        <mat-error *ngIf="hasErros('senha', 'required')">Esse é um campo obrigatório.</mat-error>
+      </mat-form-field>
+
+    </div>
+    <div fxFlex="10"
+         fxLayout="row"
+         fxLayoutAlign="center center" fxLayoutGap="30px">
+      <div fxLayoutAlign="space-evenly center">
+        <button mat-raised-button color="primary" class="br-button-entrar" [disabled]="!form.valid">Entrar</button>
+      </div>
+    </div>
+  </div>
+</form>
